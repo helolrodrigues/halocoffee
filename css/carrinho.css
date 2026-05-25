@@ -1,0 +1,210 @@
+/* ==========================================
+   CONFIGURAÇÃO GERAL DA PÁGINA DO CARRINHO
+   ========================================== */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EAD9C9; /* Cor de fundo bege claro (idêntico ao fundo da loja) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Times New Roman', Times, serif; /* Fonte clássica serifada da imagem */
+  box-sizing: border-box;
+}
+
+/* Container que centraliza o carrinho na tela */
+.pagina-carrinho-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+/* ==========================================
+   ESTRUTURA PRINCIPAL DO CARRINHO (BOX)
+   ========================================== */
+.carrinho-sidebar {
+  width: 100%;
+  max-width: 400px; /* Largura ideal para o bloco do carrinho */
+  background-color: #5D473A; /* Tom de marrom principal do fundo do carrinho */
+  color: #FFFFFF;
+  padding: 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); /* Sombra para dar destaque */
+}
+
+/* Faixa escura com o título "Seu carrinho" */
+.carrinho-titulo-box {
+  background-color: #3E2D23; /* Marrom mais escuro */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 35px;
+}
+
+.carrinho-titulo {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.icone-carrinho {
+  font-size: 1.3rem;
+}
+
+/* ==========================================
+   LISTA DE ITENS DO CARRINHO
+   ========================================== */
+.carrinho-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Espaçamento entre um item e outro */
+  margin-bottom: 30px;
+}
+
+.carrinho-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Nome do produto e preço alinhados */
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* Bloco que guarda o botão remover e a quantidade */
+.item-acoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Botão Remover e Caixa de Quantidade (Cinzas) */
+.btn-remover, 
+.item-quantidade {
+  background-color: #D9D9D9; /* Cor cinza claro da imagem */
+  color: #333333;
+  border: none;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-family: inherit;
+}
+
+.btn-remover {
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+.btn-remover:hover {
+  background-color: #BFBFBF; /* Efeito de hover leve */
+}
+
+/* ==========================================
+   BOTÃO: ADICIONAR + PRODUTOS
+   ========================================== */
+.container-adicionar-mais {
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.btn-adicionar-mais {
+  display: inline-block;
+  background-color: #3E2D23;
+  color: #FFF6EE;
+  text-decoration: none;
+  border: none;
+  padding: 8px 14px;
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-adicionar-mais:hover {
+  background-color: #2D2018;
+}
+
+/* ==========================================
+   RODAPÉ DO CARRINHO (TOTAL E FINALIZAR)
+   ========================================== */
+.carrinho-rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Texto do valor Total */
+.carrinho-total {
+  font-size: 1.6rem;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Botão grande "FINALIZAR COMPRA" */
+.btn-finalizar {
+  background-color: #3E2D23;
+  color: #FFFFFF;
+  border: none;
+  width: 100%;
+  padding: 14px 0;
+  font-size: 1.4rem;
+  font-family: inherit;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.2s ease;
+  margin-bottom: 15px;
+}
+
+.btn-finalizar:hover {
+  background-color: #2D2018;
+}
+
+/* Botão/Link "VOLTAR" */
+.btn-voltar {
+  display: inline-block;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-family: inherit;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: opacity 0.2s ease;
+}
+
+.btn-voltar:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+/* Alinha os ícones do menu um ao lado do outro */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Mantém os links e os ícones separados */
+}
+
+/* ÍCONES */
+.user-icon img,
+.link-carrinho img{
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+}
