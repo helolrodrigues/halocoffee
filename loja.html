@@ -10,13 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
 <header>
-
     <nav>
-
         <div class="logo">
             <img src="img/xicara-de-cha.png" alt="logo">
             <h1>Halo Coffee</h1>
@@ -32,138 +28,329 @@
             <li><a href="contato.html">Contato</a></li>
         </ul>
 
-       <a href="carrinho.html" class="link-carrinho">
-  <img src="img/carrinho.png" alt="carrinho-icon">
-</a>
-
-<a href="login.html" class="user-icon">
-  <img src="img/usuario.png" alt="Usuário">
-</a>
-
+<div class="menu-icons">
+    <a href="carrinho.html" class="link-carrinho">
+        <img src="img/carrinho.png" alt="Carrinho">
+    </a>
+    <a href="login.html" class="user-icon">
+        <img src="img/usuario.png" alt="Usuário">
+    </a>
+</div>
 </header>
-
 <main>
-
-    <!-- BANNER -->
     <section class="loja" style="background-image: url('img/fundoloja.jpeg');">
-
         <h2>LOJA</h2>
 
     </section>
 
-    <!-- PRODUTOS -->
-    <section class="produtos">
+<section class="produtos">
+    <div class="card-produto" onclick="abrirModal('modal1')">
 
-        <!-- CARD 1 -->
-        <div class="card-produto">
+        <img src="img/cafeloja.webp" alt="Café">
 
-            <img src="img/cafeloja.webp" alt="Café">
+        <h3>Grãos de café importados</h3>
 
-            <h3>Grãos de café importados</h3>
+        <p>R$ 130,00</p>
 
-            <p>R$ 130,00</p>
+        <button>COMPRAR</button>
 
-            <button>COMPRAR</button>
+    </div>
 
-        </div>
+    <div class="card-produto" onclick="abrirModal('modal2')">
 
-        <!-- CARD 2 -->
-        <div class="card-produto">
+        <img src="img/moedorloja.jpg" alt="Moedor">
 
-            <img src="img/moedorloja.jpg" alt="Moedor">
+        <h3>Moedor de café</h3>
 
-            <h3>Moedor de café</h3>
+        <p>R$ 59,90</p>
 
-            <p>R$ 59,90</p>
+        <button>COMPRAR</button>
 
-            <button>COMPRAR</button>
+    </div>
+    <div class="card-produto" onclick="abrirModal('modal3')">
 
-        </div>
+        <img src="img/prensaloja2.jpg" alt="Prensa">
 
-        <!-- CARD 3 -->
-        <div class="card-produto">
+        <h3>Prensa Francesa</h3>
 
-            <img src="img/prensaloja" alt="Prensa">
+        <p>R$ 49,90</p>
 
-            <h3>Prensa Francesa</h3>
+        <button>COMPRAR</button>
 
-            <p>R$ 49,90</p>
+    </div>
+    <div class="card-produto" onclick="abrirModal('modal4')">
 
-            <button>COMPRAR</button>
+        <img src="img/balancaloja.jpg" alt="Balança">
 
-        </div>
+        <h3>Balança Digital</h3>
 
-        <!-- CARD 4 -->
-        <div class="card-produto">
+        <p>R$ 179,90</p>
 
-            <img src="img/balancaloja.jpg" alt="Balança">
+        <button>COMPRAR</button>
 
-            <h3>Balança Digital para café</h3>
+    </div>
+    <div class="card-produto" onclick="abrirModal('modal5')">
 
-            <p>R$ 179,90</p>
+        <img src="img/canecaloja.jpg" alt="Caneca">
 
-            <button>COMPRAR</button>
+        <h3>Caneca Artesanal</h3>
 
-        </div>
-         <!-- CARD 5 -->
-<div class="card-produto">
+        <p>R$ 39,90</p>
 
-    <img src="img/canecaloja.jpg" alt="Caneca">
+        <button>COMPRAR</button>
 
-    <h3>Caneca Artesanal</h3>
+    </div>
+    <div class="card-produto" onclick="abrirModal('modal6')">
 
-    <p>R$ 39,90</p>
+        <img src="img/cafeloja2.jpg" alt="Café">
 
-    <button>COMPRAR</button>
+        <h3>Café Gourmet Premium</h3>
 
+        <p>R$ 89,90</p>
+
+        <button>COMPRAR</button>
+
+    </div>
+    <div class="card-produto" onclick="abrirModal('modal7')">
+
+        <img src="img/moedorloja2.jpg" alt="Moedor">
+
+        <h3>Moedor Manual</h3>
+
+        <p>R$ 129,90</p>
+
+        <button>COMPRAR</button>
+
+    </div>
+    <div class="card-produto" onclick="abrirModal('modal8')">
+
+        <img src="img/kitloja.jpg" alt="Kit">
+
+        <h3>Kit Barista</h3>
+
+        <p>R$ 249,90</p>
+
+        <button>COMPRAR</button>
+
+    </div>
+
+</section>
+
+<div class="modal" id="modal1">
+<div class="modal-conteudo">
+
+<span class="fechar" onclick="fecharModal('modal1')">&times;</span>
+
+<img src="img/cafeloja.webp">
+
+<h2>Grãos de Café Importados</h2>
+
+<p class="preco-modal">R$ 130,00</p>
+
+<p>Café colombiano com sabor intenso e notas de chocolate ☕</p>
+
+<div class="info-cafe">
+<p><strong>Origem:</strong> Colômbia</p>
+<p><strong>Intensidade:</strong> Forte</p>
+<p><strong>Torra:</strong> Média escura</p>
+</div>
+<button class="btn-modal">ADICIONAR AO CARRINHO</button>
+</div>
 </div>
 
-<!-- CARD 6 -->
-<div class="card-produto">
 
-    <img src="img/cafeloja2.jpg" alt="Grãos">
+<div class="modal" id="modal2">
+<div class="modal-conteudo">
 
-    <h3>Café Gourmet Premium</h3>
+<span class="fechar" onclick="fecharModal('modal2')">&times;</span>
 
-    <p>R$ 89,90</p>
+<img src="img/moedorloja.jpg">
 
-    <button>COMPRAR</button>
+<h2>Moedor de Café</h2>
 
+<p class="preco-modal">R$ 59,90</p>
+
+<p>Moedor manual premium com ajuste de moagem.</p>
+
+<div class="info-cafe">
+<p><strong>Material:</strong> Madeira e inox</p>
+<p><strong>Uso:</strong> Manual</p>
+<p><strong>Ideal para:</strong> Cafés especiais</p>
 </div>
 
-<!-- CARD 7 -->
-<div class="card-produto">
-
-    <img src="img/moedorloja2.jpg" alt="Coador">
-
-    <h3>Moedor Manual</h3>
-
-    <p>R$ 129,90</p>
-
-    <button>COMPRAR</button>
+<button class="btn-modal">ADICIONAR AO CARRINHO</button>
 
 </div>
-
-<!-- CARD 8 -->
-<div class="card-produto">
-
-    <img src="img/kitloja.jpg" alt="Kit Café">
-
-    <h3>Kit Barista</h3>
-
-    <p>R$ 249,90</p>
-
-    <button>COMPRAR</button>
-
 </div>
 
-    </section>
 
-</main>
+<div class="modal" id="modal3">
+<div class="modal-conteudo">
 
-<footer>
+<span class="fechar" onclick="fecharModal('modal3')">&times;</span>
 
-</footer>
+<img src="img/prensaloja2.jpg">
 
-</body>
-</html>
+<h2>Prensa Francesa</h2>
+
+<p class="preco-modal">R$ 49,90</p>
+
+<p>Extração suave e encorpada para cafés aromáticos.</p>
+
+<div class="info-cafe">
+<p><strong>Capacidade:</strong> 600ml</p>
+<p><strong>Material:</strong> Vidro e bambu</p>
+<p><strong>Ideal para:</strong> Café filtrado</p>
+</div>
+
+<button class="btn-modal">ADICIONAR AO CARRINHO</button>
+
+</div>
+</div>
+
+
+<div class="modal" id="modal4">
+<div class="modal-conteudo">
+
+<span class="fechar" onclick="fecharModal('modal4')">&times;</span>
+
+<img src="img/balancaloja.jpg">
+
+<h2>Balança Digital</h2>
+
+<p class="preco-modal">R$ 179,90</p>
+
+<p>Precisão ideal para receitas de café especiais.</p>
+
+<div class="info-cafe">
+<p><strong>Precisão:</strong> 0,1g</p>
+<p><strong>Bateria:</strong> Recarregável</p>
+<p><strong>Display:</strong> LED</p>
+</div>
+
+<button class="btn-modal">ADICIONAR AO CARRINHO</button>
+
+</div>
+</div>
+
+<div class="modal" id="modal5">
+<div class="modal-conteudo">
+
+<span class="fechar" onclick="fecharModal('modal5')">&times;</span>
+
+<img src="img/canecaloja.jpg">
+
+<h2>Caneca Artesanal</h2>
+
+<p class="preco-modal">R$ 39,90</p>
+
+<p>Caneca feita à mão com acabamento rústico elegante.</p>
+
+<div class="info-cafe">
+<p><strong>Material:</strong> Cerâmica</p>
+<p><strong>Capacidade:</strong> 350ml</p>
+<p><strong>Estilo:</strong> Artesanal</p>
+</div>
+
+<button class="btn-modal">ADICIONAR AO CARRINHO</button>
+
+</div>
+</div>
+
+
+<div class="modal" id="modal6">
+<div class="modal-conteudo">
+
+<span class="fechar" onclick="fecharModal('modal6')">&times;</span>
+
+<img src="img/cafeloja2.jpg">
+
+<h2>Café Gourmet Premium</h2>
+
+<p class="preco-modal">R$ 89,90</p>
+
+<p>Café suave com aroma caramelizado e baixa acidez.</p>
+
+<div class="info-cafe">
+<p><strong>Origem:</strong> Minas Gerais</p>
+<p><strong>Intensidade:</strong> Média</p>
+<p><strong>Notas:</strong> Caramelo e castanhas</p>
+</div>
+
+<button class="btn-modal">ADICIONAR AO CARRINHO</button>
+
+</div>
+</div>
+
+<div class="modal" id="modal7">
+<div class="modal-conteudo">
+
+<span class="fechar" onclick="fecharModal('modal7')">&times;</span>
+
+<img src="img/moedorloja2.jpg">
+
+<h2>Moedor Manual</h2>
+
+<p class="preco-modal">R$ 129,90</p>
+
+<p>Moagem uniforme para espresso e café filtrado.</p>
+
+<div class="info-cafe">
+<p><strong>Material:</strong> Aço inox</p>
+<p><strong>Moagem:</strong> Ajustável</p>
+<p><strong>Design:</strong> Compacto</p>
+</div>
+
+<button class="btn-modal">ADICIONAR AO CARRINHO</button>
+
+</div>
+</div>
+
+<div class="modal" id="modal8">
+<div class="modal-conteudo">
+
+<span class="fechar" onclick="fecharModal('modal8')">&times;</span>
+
+<img src="img/kitloja.jpg">
+
+<h2>Kit Barista</h2>
+
+<p class="preco-modal">R$ 249,90</p>
+
+<p>Kit completo para amantes de cafés especiais ☕</p>
+
+<div class="info-cafe">
+<p><strong>Inclui:</strong> Moedor, prensa e caneca</p>
+<p><strong>Material:</strong> Premium</p>
+<p><strong>Ideal para:</strong> Presentes</p>
+</div>
+
+<button class="btn-modal">ADICIONAR AO CARRINHO</button>
+
+</div>
+</div>
+
+<script>
+
+function abrirModal(id){
+    document.getElementById(id).style.display = "flex";
+}
+
+function fecharModal(id){
+    document.getElementById(id).style.display = "none";
+}
+
+window.onclick = function(event){
+
+    let modais = document.querySelectorAll(".modal");
+
+    modais.forEach(function(modal){
+
+        if(event.target == modal){
+            modal.style.display = "none";
+        }
+
+    });
+
+}
+</script>

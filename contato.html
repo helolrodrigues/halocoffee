@@ -10,13 +10,73 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 </head>
+<div class="instagram-popup" id="instagramPopup">
 
+    <div class="celular">
+
+        <div class="topo-instagram">
+
+            <h2>Instagram</h2>
+
+            <span class="fechar-insta"
+            onclick="fecharInstagram()">
+            ✕
+            </span>
+
+        </div>
+        <div class="stories">
+
+            <div class="story">
+                <div class="circulo"></div>
+                <p>cafés</p>
+            </div>
+
+            <div class="story">
+                <div class="circulo"></div>
+                <p>promo</p>
+            </div>
+
+            <div class="story">
+                <div class="circulo"></div>
+                <p>loja</p>
+            </div>
+
+        </div>
+
+        <div class="perfil-post">
+
+    <div class="foto-perfil"></div>
+
+    <div class="info-perfil">
+
+        <span class="nome-perfil">Halo Coffee</span>
+        <small class="localizacao">São Paulo, SP</small>
+    </div>
+</div>
+            <img src="img/pedro.webp" class="foto-post">
+
+            <div class="acoes-post">
+                ♡ 💬 ✈
+            </div>
+
+  <div class="legenda">
+
+    <strong>Pedro Lima • Halo Coffee</strong>
+
+    Aqui você encontra cafés premium, acessórios,
+    cursos para baristas e conteúdos sobre preparo profissional.
+<br>
+    📍 Venha conhecer nossa loja e transformar
+    sua rotina em um verdadeiro ritual do café.
+
+    #HaloCoffee #CafeEspecial #CoffeeLovers
+</div>
+        </div>
+    </div>
+</div>
 <body>
-
 <header>
-
     <nav>
-
         <div class="logo">
             <img src="img/xicara-de-cha.png" alt="logo">
             <h1>Halo Coffee</h1>
@@ -32,12 +92,15 @@
             <li><a href="contato.html">Contato</a></li>
         </ul>
 
-        <div class="carrinho-icon">
-            <img src="img/carrinho.png" alt="Carrinho">
-        </div>
-       <a href="login.html" class="user-icon">
-    <img src="img/usuario.png" alt="Usuário">
-</a>
+      
+<div class="menu-icons">
+    <a href="carrinho.html" class="link-carrinho">
+        <img src="img/carrinho.png" alt="Carrinho">
+    </a>
+    <a href="login.html" class="user-icon">
+        <img src="img/usuario.png" alt="Usuário">
+    </a>
+</div>
 
     </nav>
 
@@ -49,13 +112,12 @@
 
    <main class="container">
 
-    <!-- CONTATO -->
     <section class="coluna-contato">
         <h3>FALE CONOSCO</h3>
 
         <div class="info">
             <i class="fa-solid fa-phone"></i>
-            <p>(11)9964-634</p>
+            <p>(11)9 9640-6342</p>
         </div>
 
         <div class="info">
@@ -65,25 +127,40 @@
 
         <div class="info">
             <i class="fa-regular fa-clock"></i>
-            <p>Segunda á Sexta - 8:00h as 18:00h</p>
+            <p>Todos os dias - 8:00h as 18:00h</p>
         </div>
 
         <h3 class="titulo-local">ONDE ESTAMOS</h3>
 
         <div class="info">
             <i class="fa-solid fa-location-dot"></i>
-            <p>Rua: Monções - Jardim Horizonte - n 54 - SP</p>
+            <p>Rua: Monções - Jardim Horizonte - N 54 - SP</p>
         </div>
-    </section>
+        <div class="redes-sociais">
 
-    <!-- FORMULARIO -->
-    <section class="coluna-formulario">
+    <h3>NOS SIGA NAS REDES</h3>
+  <div class="info">
+    <p>
+        Acompanhe promoções, cafés especiais e novidades ☕
+    </p>
+</div>
+    <button onclick="abrirInstagram()" class="btn-instagram">
+
+        <img src="img/instagram.png" alt="Instagram">
+
+        @halocoffee
+
+    </button>
+
+</div>
+    </section>
+        <section class="coluna-formulario">
         <h3>ENVIE UMA MENSAGEM</h3>
 
         <form>
             <input type="text" placeholder="Nome">
 
-            <input type="email" placeholder="e-mail">
+            <input type="email" placeholder="E-mail">
 
             <textarea placeholder="Mensagem"></textarea>
 
@@ -91,7 +168,6 @@
         </form>
     </section>
 
-    <!-- MAPA -->
     <section class="coluna-loja">
         <h3>NOSSA LOJA</h3>
 
@@ -102,4 +178,13 @@
         </div>
     </section>
 
+<script>
+
+function abrirInstagram(){
+    document.getElementById("instagramPopup").style.display = "block";
+}
+function fecharInstagram(){
+    document.getElementById("instagramPopup").style.display = "none";
+}
+</script>
 </main>
